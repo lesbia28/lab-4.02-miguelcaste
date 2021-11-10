@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "a2918fb8-6e20-4c16-afa9-ceb333499427",
+		"name": "lab-4.02-miguelcaste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Get All Employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EmployeeById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "7615276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EmployeeByStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee-by-status/:status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee-by-status",
+								":status"
+							],
+							"variable": [
+								{
+									"key": "status",
+									"value": "OFF"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EmployeeByDepartment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/employee-by-department/:department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"employee-by-department",
+								":department"
+							],
+							"variable": [
+								{
+									"key": "department",
+									"value": "cardiology"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "Get All Patient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/patient",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PatientById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/patient/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PatientBetwenDateOfBirth",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/patient/between-date?initialDate=1984-02-01&finalDate=1984-12-31",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"between-date"
+							],
+							"query": [
+								{
+									"key": "initialDate",
+									"value": "1984-02-01"
+								},
+								{
+									"key": "finalDate",
+									"value": "1984-12-31"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PatientByEmployeeStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/patient/employee-status-off",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"employee-status-off"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PatientByEmployeeDepartment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/patient/employee-department/:department",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"patient",
+								"employee-department",
+								":department"
+							],
+							"variable": [
+								{
+									"key": "department",
+									"value": "psychiatric"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
